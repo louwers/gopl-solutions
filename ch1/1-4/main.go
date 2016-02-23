@@ -36,7 +36,7 @@ func main() {
 					counts[line] = make(map[int]int)
 				}
 				counts[line][0] += amount // keeps track of the total
-                :x
+				counts[line][fileIdx + 1] += amount
 			}
 			f.Close()
 		}
